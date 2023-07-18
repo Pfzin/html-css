@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/*Versao p o resto
+
+mobile:320-480px
+tablets:481-768px
+pc:769-1200px
+tv:1200px+
+*/
+
+@media print {
+    
+}
+
+@media screen and (min-width: 468px) and (max-width: 992px){
+    body{
+        background-image: url(..//imagens/back-tablet.jpg);
+    }
+    img#tablet{
+        display: block;
+    }
+    img#celular, img#tv, img#print, img#pc{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#pc{
+        display: block;
+    }
+    img#tablet, img#tv, img#print, img#celular{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#tv{
+        display: block;
+    }
+    img#tablet, img#celular, img#print, img#pc{
+        display: none;
+    }
+}
